@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @news_history.user_id %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @news_history.price %>
+</p>
+
+<p>
+  <strong>Detail:</strong>
+  <%= @news_history.detail %>
+</p>
+
+<%= link_to 'Edit', edit_news_history_path(@news_history) %> |
+<%= link_to 'Back', news_histories_path %>
